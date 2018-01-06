@@ -1,0 +1,15 @@
+<div>
+<mat-toolbar>
+    <span>Categories</span>
+    <span class="spacer"></span>
+    <button mat-raised-button color="primary"  (click)="onAddCategoryClicked()">Add Category</button>
+</mat-toolbar>
+</div>
+<div>
+  <mat-list role="list" selector="mat-divider">
+  <mat-list-item  role="listitem" *ngFor="let category of categories" style="cursor: pointer;"
+                  (click)='onCategoryItemClicked(category.id)'>
+    <h4 mat-line>{{category.title}}</h4>
+  </mat-list-item>
+  </mat-list>
+</div>

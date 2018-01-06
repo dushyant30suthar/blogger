@@ -1,0 +1,15 @@
+<mat-toolbar>
+    <span>Edit Blog</span>
+    <span class="spacer"></span>
+    <button mat-button color="primary" style="margin:2px" (click)="onBackClickedListener()">Cancel</button>
+    <button mat-raised-button color="primary" style="margin:2px" (click) = 'addBlog(titleInput.value,bodyInput.value)'>Add</button>
+</mat-toolbar>
+<form class="form" style="margin:16px">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Blog Title" type="text"  #titleInput/>
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <textarea matInput  matTextareaAutosize matAutosizeMinRows="2"
+            matAutosizeMaxRows="10" placeholder="Body" #bodyInput></textarea>
+  </mat-form-field>
+</form>

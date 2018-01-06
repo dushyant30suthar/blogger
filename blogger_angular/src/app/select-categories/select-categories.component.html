@@ -1,0 +1,13 @@
+<div>
+
+<mat-toolbar>
+    <span>Select Categories</span>
+</mat-toolbar>
+</div>
+<div>
+  <mat-selection-list role="list" selector="mat-divider">
+  <mat-list-option  role="listitem" *ngFor="let category of categories" style="cursor: pointer;" (click)='onToggle(category)'>
+    <h4 mat-line>{{category.title}}</h4>
+  </mat-list-option>
+  </mat-selection-list>
+</div>

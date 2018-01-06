@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <span>Edit Category</span>
+    <span class="spacer"></span>
+    <button mat-button color="primary" style="margin:2px" (click)="onBackClickedListener()">Cancel</button>
+    <button mat-raised-button color="primary" style="margin:2px" (click) = 'addCateogry(titleInput.value)'>Add</button>
+</mat-toolbar>
+<form class="form" style="margin:16px">
+  <mat-form-field class="full-width">
+    <input matInput placeholder="Category Name" type="text"  #titleInput>
+  </mat-form-field>
+</form>
